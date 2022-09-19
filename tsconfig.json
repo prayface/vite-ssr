@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "jsx": "preserve",
+        "module": "esnext",
+        "target": "esnext",
+        "baseUrl": ".",
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "useDefineForClassFields": true,
+        "paths": {
+            "@/*": ["src/*"]
+        }
+    },
+    "include": ["src/**/*"]
+}
