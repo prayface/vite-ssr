@@ -85,5 +85,15 @@ export default (config) => {
         ssr: {
             format: "cjs",
         },
+        css: {
+            preprocessorOptions: {
+                less: {
+                    javascriptEnabled: true,
+                    modifyVars: {
+                        hack: `true; @import (reference) "${resolve("src/assets/common.less")}"`,
+                    },
+                },
+            },
+        },
     });
 };

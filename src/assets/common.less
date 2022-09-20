@@ -1,6 +1,16 @@
-.font(@px, @bold) {
+.font(@px, @bold, @height: @px + 8) {
     font-size: @px;
-    line-height: @px + 8;
+    line-height: @height;
     font-family: if(@bold, medium, regular);
     font-weight: if(@bold, bolder, normal);
+}
+
+.inline-block(@vertical: top) {
+    display: inline-block;
+    vertical-align: @vertical;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
 }
